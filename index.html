@@ -8,56 +8,62 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lato:wght@100&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@100&display=swap"
-        rel="stylesheet">
-    <title>Encriptador | ONE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
 </head>
 
 <body>
-    <div class="fondo-imagen-principal"></div>
-    <div class="fondo-color-principal"></div>
-    <div class="img-alura"><img src="imagenes/logo.png"></div>
-    <div class="main">
-        <main>
-            <section>
-                <div class="div-encriptar">
-                    <input class="input-encriptar" type="text" placeholder="Ingrese el texto aqui">
-                </div>
-                <div class="div-desencriptar">
-                    <img class="img-muñeco" src="imagenes/muñeco.png">
-                    <div class="mensajes">
-                        <p class="d1">Ningun mensaje fue encontrado</p>
-                        <p class="d2">Ingrese el texto que desee encriptar o desencriptar</p>
+    <div id="atenuar"></div>
+    <header>
+        <div class="img-logo">
+            <a href="https://www.aluracursos.com/" target="_blank">
+                <img src="imagenes/logo.png" alt="logo de alura">
+            </a>
+        </div>
+        <div class="img-tema">
+            <img src="imagenes/muslim.png" alt="imagen de luna" id="bdark">
+        </div>
+    </header>
+    <main>
+        <section class="content-principal">
+            <div class="left-div">
+                <textarea class="text-area-izquierda" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="botones-izquierda">
+                    <div class="boton-encriptar">
+                        <button onclick="btnEncriptar()">Encriptar</button>
+                    </div>
+                    <div class="boton-desencriptar">
+                        <button onclick="btnDesencriptar()">Desencriptar</button>
                     </div>
                 </div>
-            </section>
-            <div class="adv">
-                <div class="adv-img"><img src="imagenes/advertencia.png"></div>
-                <div class="adv-p"><p>Solo letras minusculas y sin acentos</p></div>             
             </div>
-            <div class="botones">
-                <div class="botones-izquierda">
-                    <button class="btn-encriptar">Encriptar</button>
-                    <button class="btn-desencriptar">Desencriptar</button>
-                </div>
+            <div class="right-div">
+                <textarea id="texto" class="text-area-derecha" placeholder=""></textarea>
                 <div class="botones-derecha">
-                    <button class="btn-copiar">Copiar</button>
-                    <button class="btn-escuchar">Escuchar</button>
+                    <div class="boton-copiar">
+                        <button onclick="btnCopiar()">Copiar</button>
+                    </div>
+                    <div class="boton-escuchar">
+                        <button id="hablar" onclick="btnEscuchar()">Escuchar</button>
+                    </div>
                 </div>
             </div>
-            
-            
-
-        </main>
-        <footer>
-            <a href="https://www.linkedin.com/in/walter-suel-arroyo-software/" target="_blank"><img
-                    src="imagenes/linkedin.png"></a>
-
+        </section>
+    </main>
+    <footer>
+        <div >
+            <div class="pie-de-pagina">
+                <a href="https://www.linkedin.com/in/walter-suel-arroyo-software/"  target="_blank">
+                    <img src="imagenes/linkedin.png" alt="linkedin">
+                </a>
+                
+            </div>
+        </div>
+        <div class="div-texto-footer">
             <p>Walter Nick Suel Arroyo | Copyright ©2023</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
 
