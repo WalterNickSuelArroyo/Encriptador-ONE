@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
 }
+
 .dmBody {
     background-color: #F3F5FC;
     width: 100%;
@@ -17,6 +18,7 @@
     background-size: cover;
     position: relative;
 }
+
 .encima-imagen {
     width: 100%;
     height: 100%;
@@ -25,23 +27,27 @@
     display: flex;
     z-index: 0;
 }
+
 header {
     width: 100%;
     height: 10vh;
     z-index: 3;
     position: fixed;
 }
+
 .img-logo {
     width: 50vw;
     height: 100%;
-    float: left;    
+    float: left;
 }
+
 .img-logo img {
     cursor: pointer;
     margin-top: 23px;
     margin-left: 40px;
     width: 35px;
 }
+
 .dmLogo img {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(164deg) brightness(107%) contrast(105%);
     cursor: pointer;
@@ -49,6 +55,7 @@ header {
     margin-left: 40px;
     width: 35px;
 }
+
 .dmTema img {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(164deg) brightness(107%) contrast(105%);
     cursor: pointer;
@@ -56,11 +63,13 @@ header {
     margin-left: 40px;
     width: 35px;
 }
+
 .img-tema {
     width: 50vw;
     height: 100%;
     float: right;
 }
+
 .img-tema img {
     cursor: pointer;
     position: absolute;
@@ -70,19 +79,22 @@ header {
     margin-top: 35px;
     margin-right: 40px;
 }
+
 main {
     top: 10vh;
     width: 100%;
     height: 80vh;
     position: relative;
 }
+
 .left-div {
     position: absolute;
     width: 50%;
     height: 100%;
     text-align: center;
-    
+
 }
+
 .text-area-izquierda {
     color: #0A3871;
     box-sizing: border-box;
@@ -94,11 +106,13 @@ main {
     border: none;
     border-radius: 32px;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.text-area-izquierda:focus{
+
+.text-area-izquierda:focus {
     outline: none;
 }
+
 .botones-izquierda {
     position: absolute;
     width: 100%;
@@ -106,12 +120,14 @@ main {
     bottom: 0;
     left: 0;
 }
+
 .boton-encriptar {
     display: flex;
     width: 100%;
     height: 50%;
-    align-items: center;    
+    align-items: center;
 }
+
 .boton-encriptar button {
     cursor: pointer;
     border: none;
@@ -129,8 +145,9 @@ main {
     width: 100%;
     height: 50%;
     align-items: center;
-    
+
 }
+
 .boton-desencriptar button {
     border: none;
     background: #D8DFE8;
@@ -141,6 +158,7 @@ main {
     margin: auto;
     cursor: pointer;
 }
+
 .right-div {
     position: absolute;
     top: 0;
@@ -148,9 +166,10 @@ main {
     width: 50%;
     height: 100%;
     text-align: center;
-    
+
 }
-.text-area-derecha{
+
+.text-area-derecha {
     background-image: url(imagenes/muñeco.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -164,14 +183,17 @@ main {
     border: none;
     border-radius: 32px;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
 ::placeholder {
     color: rgba(10, 56, 13, 0.3);
 }
-.text-area-derecha:focus{
+
+.text-area-derecha:focus {
     outline: none;
 }
+
 .botones-derecha {
     position: absolute;
     width: 100%;
@@ -179,13 +201,15 @@ main {
     bottom: 0;
     right: 0;
 }
+
 .boton-copiar {
     display: flex;
     width: 100%;
     height: 50%;
     align-items: center;
-    
+
 }
+
 .boton-copiar button {
     border: none;
     background: #0A3871;
@@ -196,6 +220,7 @@ main {
     margin: auto;
     cursor: pointer;
 }
+
 .boton-escuchar {
     border: none;
     display: flex;
@@ -203,6 +228,7 @@ main {
     height: 50%;
     align-items: center;
 }
+
 .boton-escuchar button {
     border: none;
     background: #FFB800;
@@ -213,6 +239,7 @@ main {
     margin: auto;
     cursor: pointer;
 }
+
 footer {
     position: absolute;
     width: 100%;
@@ -221,19 +248,21 @@ footer {
     left: 0;
     display: flex;
 }
+
 .pie-de-pagina {
-    display: flex;
     width: 80px;
     height: 100%;
     align-items: center;
     text-align: center;
-    
+
 }
+
 footer img {
     width: 50px;
     padding: 10px;
     margin: auto;
 }
+
 .div-texto-footer {
     display: flex;
     align-items: center;
@@ -241,23 +270,203 @@ footer img {
     height: 100%;
     color: #0A3871;
 }
+
 .div-texto-footer p {
     font-weight: 400;
     font-size: 20px;
-    width: 100%;  
+    width: 100%;
 }
+
 .dmTextareaIzq {
     background-color: rgba(255, 255, 255, 0.5);
 }
+
 .dmTextareaDer {
     background-color: rgba(255, 255, 255, 0.5);
 }
-.dmTextoFooter{
+
+.dmTextoFooter {
     color: white;
 }
+
 .encript button {
     background: #3975BF;
 }
+
 .copy button {
     background: #3975BF;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+    .img-logo img {
+        width: 25px;
+        float: none;
+    }
+
+    .img-tema {
+        width: 100%;
+        float: none;
+    }
+
+    .left-div,
+    .right-div {
+        width: 70%;
+        height: 360px;
+        position: relative;
+        margin: auto;
+    }
+
+    .text-area-izquierda,
+    .text-area-derecha {
+        width: 100%;
+        height: 260px;
+        background-size: 50%;
+        margin-top: 30px;
+    }
+    .botones-izquierda, .botones-derecha {
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+        
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar, .boton-escuchar {
+        width: 35%;
+        font-size: 10px;
+        display: inline;
+    }
+    .boton-encriptar button, .boton-desencriptar button, .boton-copiar button, .boton-escuchar button {
+        font-size: 15px;
+        width: 30%;
+        display: inline;
+        margin: 5px;
+    }
+    footer img {
+        padding-top: 26px;
+        width: 30px;
+    }
+    .div-texto-footer p {
+        width: 100%;
+        font-size: 15px;
+        height: 60px;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 10px;
+        height: 100%;
+    }
+    .img-logo img {
+        width: 25px;
+        float: none;
+    }
+
+    .img-tema {
+        width: 100%;
+        float: none;
+    }
+
+    .left-div,
+    .right-div {
+        width: 70%;
+        height: 290px;
+        position: relative;
+        margin: auto;
+    }
+
+    .text-area-izquierda,
+    .text-area-derecha {
+        width: 100%;
+        height: 200px;
+        background-size: 50%;
+        margin-top: 30px;
+    }
+    .botones-izquierda, .botones-derecha {
+        width: 100%;
+        height: 50px;
+        
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar, .boton-escuchar {
+        width: 35%;
+    }
+    .boton-encriptar button, .boton-desencriptar button, .boton-copiar button, .boton-escuchar button {
+        font-size: 10px;
+        width: 30%;
+    }
+    footer {
+        margin-top: 15px;
+        height: 5%;
+    }
+    footer img {
+        padding-top: 10px;
+        width: 20px;
+    }
+    .div-texto-footer p {
+        width: 100%;
+        font-size: 10px;
+        height: 60px;
+        padding-top: 55px;
+    }
+}
+
+@media (max-width: 390px) {
+    body {
+        font-size: 10px;
+        height: 100%;
+    }
+    .img-logo img {
+        width: 25px;
+        float: none;
+    }
+
+    .img-tema {
+        width: 100%;
+        float: none;
+    }
+
+    .left-div,
+    .right-div {
+        width: 70%;
+        height: 350px;
+        position: relative;
+        margin: auto;
+    }
+
+    .text-area-izquierda,
+    .text-area-derecha {
+        width: 100%;
+        height: 250px;
+        background-size: 50%;
+        margin-top: 30px;
+    }
+    .botones-izquierda, .botones-derecha {
+        width: 100%;
+        height: 50px;
+        
+    }
+    .boton-encriptar, .boton-desencriptar, .boton-copiar, .boton-escuchar {
+        width: 35%;
+    }
+    .boton-encriptar button, .boton-desencriptar button, .boton-copiar button, .boton-escuchar button {
+        font-size: 10px;
+        width: 30%;
+    }
+    footer {
+        margin-top: 15px;
+        height: 5%;
+    }
+    footer img {
+        padding-top: 10px;
+        width: 20px;
+    }
+    .div-texto-footer p {
+        width: 100%;
+        font-size: 10px;
+        height: 60px;
+        padding-top: 55px;
+    }
 }

@@ -12,7 +12,7 @@ function btnDesencriptar() {
     const textoAdesencriptar = textArea.value;
     const textoDesencriptado = desencriptar(textoAdesencriptar);
     mensaje.value = textoDesencriptado;
-    textArea.value="";
+    textArea.value=""; 
 }
 
 function btnCopiar() {
@@ -20,7 +20,6 @@ function btnCopiar() {
     textArea.value = textoCopiado;
     mensaje.value = "";
 }
-
 
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -44,11 +43,6 @@ function desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 }
 
-
-
-
-
-
 const bdark = document.querySelector('#bdark');
 const dmBody = document.querySelector('body')
 const dmAtenuar = document.querySelector('#atenuar');
@@ -71,20 +65,12 @@ bdark.addEventListener('click', e => {
     dmLogo.classList.toggle('dmLogo');
     dmTema.classList.toggle('dmTema');
     dmTextoFooter.classList.toggle('dmTextoFooter');
-    
-    /*dmbtnEncriptar.classList.toggle('dmbtn-encriptar')
-    dminformacion.classList.toggle('dminformacion')
-    dmmensaje.classList.toggle('dmmensaje')*/
 })
-
-
-
-
-
 
 document.getElementById('hablar').addEventListener("click",()=>{
     decir(document.getElementById("texto").value);
 });
+
 function decir(texto){
     speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
 }
